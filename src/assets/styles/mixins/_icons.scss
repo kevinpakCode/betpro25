@@ -1,0 +1,51 @@
+@mixin icons-layout($w, $h, $nameIcon, $defaultColor:null, $path:null) {
+  display: inline-block;
+  min-width: $w;
+  min-height: $h;
+  //$pathIcon: './../../../../assets/images/icons/';
+  $pathIcon: '/';
+  @if $path {
+    $pathIcon: $path;
+  }
+    
+  @if $defaultColor {
+    background-color: $defaultColor;
+    //-webkit-mask-image: url('./../../../../assets/images/icons/'+$nameIcon);
+    -webkit-mask-image: url($pathIcon+''+$nameIcon);
+    -webkit-mask-size: $w $h;
+    -webkit-mask-repeat: no-repeat ;
+    -webkit-mask-position: center;
+    &[style *="--bgColor"] {
+      background-color: var(--bgColor) ;
+    }
+  } @else {
+    //background-image: url('./../../../../assets/'+$nameIcon);
+    background-image: url($pathIcon+''+$nameIcon);
+    background-size: $w $h;
+    background-repeat: no-repeat ;
+    background-position: center;
+  }
+
+  &.icon--medium {
+    min-width: 2.2rem;
+    min-height: 2.2rem;
+    -webkit-mask-size: 2.2rem 2.2rem;
+    //#009688
+  }
+  
+}
+
+@mixin setSizeIcon($w, $h,  $type:'mask') {
+  min-width: $w;
+  min-height: $h;
+
+  @if ($type=='mask') {
+    -webkit-mask-size: $w $h;
+  } @else {
+    background-size: $w $h;
+  }
+}
+
+@mixin setColorIcon($bgColor) {
+  background-color: $bgColor;
+}

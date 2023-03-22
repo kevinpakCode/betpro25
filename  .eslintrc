@@ -1,0 +1,11 @@
+{
+
+  "rules":{
+    //"camelcase": 1,
+    "camelcase": ["error", {"properties": "never"}],
+    "comma-dangle": 2,
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "react/react-in-jsx-scope": "off"
+  }
+}

@@ -1,0 +1,36 @@
+@mixin scrollBar($direction:'y', $colorTrack:transparent, $colorThumb:#A8AAB1, $w:2px, $h:2px) {
+  @if $direction=='x' {
+    overflow-x: auto;
+    overflow-y: hidden;
+  } @else if $direction=='y' {
+    overflow-x: hidden;
+    overflow-y: auto;
+  } @else {
+    overflow: auto;
+  }
+
+  &::-webkit-scrollbar {
+    width: $w;
+    height: $h;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $colorTrack;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    width: $w;
+    background-color: $colorTrack !important; 
+    border-radius: $w;
+    box-shadow: none;
+    border: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 30%;
+    height: $h;
+    background-color: $colorThumb !important;/*#A8AAB1*/
+    outline: none;
+    border-radius: $w;
+  }
+}

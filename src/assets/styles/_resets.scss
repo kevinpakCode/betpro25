@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  /*z-index: 1;*/
+}
+
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+mark {
+  background-color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  transition: background-color .3s linear;
+  cursor: pointer;
+}
+
+/*button:hover>i[class*="icon-"] {
+  background-color: #f1902c;
+}*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}

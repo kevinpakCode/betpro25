@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1fcf6470.css",
+    "main.js": "/static/js/main.1e082461.js",
+    "static/media/empoli.svg": "/static/media/empoli.da30dee8106cb7b21876a6e34f00a286.svg",
+    "static/media/bannerBg.png": "/static/media/bannerBg.2f90298fa40b39ef17dd.png",
+    "static/media/premier_league.svg": "/static/media/premier_league.448a9d6e446fc9170c333f98e9446fc1.svg",
+    "static/media/everton.svg": "/static/media/everton.e125c8da2e75e4b913e891d0fe9401ab.svg",
+    "static/media/alexandre-lacazette.svg": "/static/media/alexandre-lacazette.6a10ec1d6dc8aeefde7b59c294b5c810.svg",
+    "static/media/liverpool.svg": "/static/media/liverpool.5a1a225263bfe64a26d547f9a390c04a.svg",
+    "static/media/messi.png": "/static/media/messi.cc54b953012b65140e14.png",
+    "static/media/nantes.svg": "/static/media/nantes.c4b12a8b3a93a6b6685af084d0f15c14.svg",
+    "static/media/neyma.png": "/static/media/neyma.0fd8e8a134f198ae6de9.png",
+    "static/media/evanGuessand.svg": "/static/media/evanGuessand.d0c2fb6af8d9085c412e984b5f7242f3.svg",
+    "static/media/serieA.svg": "/static/media/serieA.8612c93b5e336ed54289a1e69582df3c.svg",
+    "static/media/league1.svg": "/static/media/league1.72687f3d6d24b9bd6276329736a005ff.svg",
+    "static/media/Exo-MediumItalic.ttf": "/static/media/Exo-MediumItalic.4d14a4e6071558a76962.ttf",
+    "static/media/Exo-SemiBoldItalic.ttf": "/static/media/Exo-SemiBoldItalic.52f4e22042d87e57f0ae.ttf",
+    "static/media/Exo-Light.ttf": "/static/media/Exo-Light.6f4a1dea002b370d4e78.ttf",
+    "static/media/Exo-Medium.ttf": "/static/media/Exo-Medium.6c8498beade855010e89.ttf",
+    "static/media/Exo-Regular.ttf": "/static/media/Exo-Regular.71beb31d81ad501875c4.ttf",
+    "static/media/Exo-SemiBold.ttf": "/static/media/Exo-SemiBold.7432b13156830e3b8c31.ttf",
+    "static/media/Exo-ExtraBold.ttf": "/static/media/Exo-ExtraBold.c7ec2dac4af54687721d.ttf",
+    "static/media/Exo-Bold.ttf": "/static/media/Exo-Bold.262e5bf42773e5ddb032.ttf",
+    "static/media/markoPjaca.png": "/static/media/markoPjaca.86ccbad4d38961364a4e.png",
+    "static/media/atlalanta.svg": "/static/media/atlalanta.f92ffd2ffa9f0ad37fa529e1332ff0f5.svg",
+    "static/media/lyon.svg": "/static/media/lyon.46a844b4d96e36a17c956c01380e774b.svg",
+    "static/media/logo.svg": "/static/media/logo.c34799de3c491be60dd87957a5db00b4.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "static/media/slider-arrown-left.svg": "/static/media/slider-arrown-left.8c5247986de2709077d4.svg",
+    "static/media/slider-arrown-right.svg": "/static/media/slider-arrown-right.7ef395b20eca273b056f.svg",
+    "main.1fcf6470.css.map": "/static/css/main.1fcf6470.css.map",
+    "main.1e082461.js.map": "/static/js/main.1e082461.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fcf6470.css",
+    "static/js/main.1e082461.js"
+  ]
+}
