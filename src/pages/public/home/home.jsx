@@ -43,8 +43,8 @@ const Home = () => {
   }
   const classes = userStyles()
 
-  const data = [
-    /*{
+  /* const data = [
+    {
       championship: {
         name: 'Ligue 1',
         logo: leagueUnLogo,
@@ -106,8 +106,9 @@ const Home = () => {
 
       ]
 
-    },*/
-
+    },
+  ] */
+  const data = [
     {
       championship: {
         name: 'Mathes amicaux',
@@ -200,7 +201,7 @@ const Home = () => {
 
       ]
 
-    }
+    },
   ]
 
   const SliderList = data.map((item, index) => {

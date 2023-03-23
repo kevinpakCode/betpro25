@@ -2,13 +2,13 @@ import classNames from 'classnames'
 import userStyles from './styles'
 
 export const Button = ({children, className, size, textSize, bg, color, theme, disabled, onClick, ...props}) => {
-  const btnOpt = {}
-  if(size) btnOpt.size = size
-  if(textSize) btnOpt.textSize = textSize
-  if(bg) btnOpt.bg = bg
-  if(color) btnOpt.color = color
+  const btn_opt = {}
+  if(size) btn_opt.size = size
+  if(textSize) btn_opt.textSize = textSize
+  if(bg) btn_opt.bg = bg
+  if(color) btn_opt.color = color
   
-  props.btnOpt = btnOpt
+  props.btn_opt = btn_opt
   const classes = userStyles(props)
   //console.log('disabled-->', disabled)
   //==>>size:('small', 'normal', 'big')
