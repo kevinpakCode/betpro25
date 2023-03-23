@@ -24,6 +24,13 @@ import evanGuessandImg from './../../../assets/images/uploads/players/evanGuessa
 import ademolaLookmanImg from './../../../assets/images/uploads/players/ademolaLookman.png'
 import markoPjacaImg from './../../../assets/images/uploads/players/markoPjaca.png'
 
+import englandFlag from './../../../assets/images/uploads/countries/angleterre_flag.svg'
+import danemakFlag from './../../../assets/images/uploads/countries/danemak_flag.svg'
+import finlandFlag from './../../../assets/images/uploads/countries/finland_flag.svg'
+import iranFlag from './../../../assets/images/uploads/countries/iran_flag.svg'
+import italieFlag from './../../../assets/images/uploads/countries/italie_flag.svg'
+import russieFlag from './../../../assets/images/uploads/countries/russie_flag.svg'
+
 
 
 const Home = () => {
@@ -37,7 +44,7 @@ const Home = () => {
   const classes = userStyles()
 
   const data = [
-    {
+    /*{
       championship: {
         name: 'Ligue 1',
         logo: leagueUnLogo,
@@ -94,6 +101,100 @@ const Home = () => {
           player: {
             name: 'Marko Pjaca',
             img: markoPjacaImg
+          }
+        },
+
+      ]
+
+    },*/
+
+    {
+      championship: {
+        name: 'Mathes amicaux',
+        logo: '',
+        datetime: '23.03 - 17:00',
+        cote: '3.28',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Iran',
+          logo: iranFlag,
+          cote: '2.25',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Russie',
+          logo: russieFlag,
+          cote: '3.28',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Championnat d\'Europe 2024',
+        logo: '',
+        datetime: '23.03 - 19:45',
+        cote: '3.09',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Italie',
+          logo: italieFlag,
+          cote: '2.936',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Angleterre',
+          logo: englandFlag,
+          cote: '2.57',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Championnat d\'Europe 2024',
+        logo: '',
+        datetime: '23.03 - 19:45',
+        cote: '4.86',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Danemark',
+          logo: danemakFlag,
+          cote: '1.32',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Finlande',
+          logo: finlandFlag,
+          cote: '10.5',
+          player: {
+            name: '',
+            img: ''
           }
         },
 
