@@ -23,7 +23,7 @@ import mantchester from './../../../assets/images/uploads/teams/Manchester.svg'
 import brentford from './../../../assets/images/uploads/teams/Brentford.svg'
 import gilVicente from './../../../assets/images/uploads/teams/Gil_Vicente.svg'
 import sportingClub from './../../../assets/images/uploads/teams/Sporting_Clube_de_Portugal.svg'
-import barcelone from './../../../assets/images/uploads/teams/Brentford.svg'
+import barcelone from './../../../assets/images/uploads/teams/Barcelona.svg'
 import realMardrid from './../../../assets/images/uploads/teams/Real_Madrid.svg'
 
 import messiImg from './../../../assets/images/uploads/players/messi.png'
