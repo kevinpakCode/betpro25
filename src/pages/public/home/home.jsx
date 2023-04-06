@@ -26,6 +26,13 @@ import sportingClub from './../../../assets/images/uploads/teams/Sporting_Clube_
 import barcelone from './../../../assets/images/uploads/teams/Barcelona.svg'
 import realMardrid from './../../../assets/images/uploads/teams/Real_Madrid.svg'
 
+import annecy from './../../../assets/images/uploads/teams/Annecy.svg'
+import fenerbahçe from './../../../assets/images/uploads/teams/Fenerbahce.svg'
+import kayserispor from './../../../assets/images/uploads/teams/Kayserispor.svg'
+import krasnodor from './../../../assets/images/uploads/teams/Krasnodar.svg'
+import rostov from './../../../assets/images/uploads/teams/Rostov.svg'
+import toulouse from './../../../assets/images/uploads/teams/Toulouse.svg'
+
 import messiImg from './../../../assets/images/uploads/players/messi.png'
 import neymaImg from './../../../assets/images/uploads/players/neyma.png'
 import alexandreLacazetteImg from './../../../assets/images/uploads/players/alexandreLacazette.png'
@@ -304,6 +311,99 @@ const Home = () => {
           name: 'Real Madrid',
           logo: realMardrid,
           cote: '2.975',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Coupe de Turquie',
+        logo: '',
+        datetime: [2023, 3, 6 , 17, 30, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '5.65',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Fenerbahçe SK',
+          logo: fenerbahçe,
+          cote: '1.33',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Kayserispor',
+          logo: kayserispor,
+          cote: '7.9',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Coupe de France',
+        logo: '',
+        datetime: [2023, 3, 6 , 18, 45, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '4.06',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Annecy',
+          logo: annecy,
+          cote: '5.15',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Toulouse',
+          logo: toulouse,
+          cote: '1.63',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Coupe de Russie',
+        logo: '',
+        datetime: [2023, 3, 6 , 10, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.64',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Krasnodar',
+          logo: krasnodor,
+          cote: '1.86',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Rostov',
+          logo: rostov,
+          cote: '4.15',
           player: {
             name: '',
             img: ''
