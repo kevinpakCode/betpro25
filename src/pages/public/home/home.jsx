@@ -1,7 +1,9 @@
 import React from 'react'
+import { useEffect } from 'react'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from 'react-slick'
+import moment from 'moment'
 import userStyles from './styles'
 import './styles.scss'
 import { classNames } from 'classnames'
@@ -17,6 +19,20 @@ import nantesImg from './../../../assets/images/uploads/teams/nantes.svg'
 import empoliLogo from './../../../assets/images/uploads/teams/empoli.svg'
 import atlalantaLogo from './../../../assets/images/uploads/teams/atlalanta.svg'
 
+import mantchester from './../../../assets/images/uploads/teams/Manchester.svg'
+import brentford from './../../../assets/images/uploads/teams/Brentford.svg'
+import gilVicente from './../../../assets/images/uploads/teams/Gil_Vicente.svg'
+import sportingClub from './../../../assets/images/uploads/teams/Sporting_Clube_de_Portugal.svg'
+import barcelone from './../../../assets/images/uploads/teams/Barcelona.svg'
+import realMardrid from './../../../assets/images/uploads/teams/Real_Madrid.svg'
+
+import annecy from './../../../assets/images/uploads/teams/Annecy.svg'
+import fenerbahçe from './../../../assets/images/uploads/teams/Fenerbahce.svg'
+import kayserispor from './../../../assets/images/uploads/teams/Kayserispor.svg'
+import krasnodor from './../../../assets/images/uploads/teams/Krasnodar.svg'
+import rostov from './../../../assets/images/uploads/teams/Rostov.svg'
+import toulouse from './../../../assets/images/uploads/teams/Toulouse.svg'
+
 import messiImg from './../../../assets/images/uploads/players/messi.png'
 import neymaImg from './../../../assets/images/uploads/players/neyma.png'
 import alexandreLacazetteImg from './../../../assets/images/uploads/players/alexandreLacazette.png'
@@ -24,6 +40,23 @@ import evanGuessandImg from './../../../assets/images/uploads/players/evanGuessa
 import ademolaLookmanImg from './../../../assets/images/uploads/players/ademolaLookman.png'
 import markoPjacaImg from './../../../assets/images/uploads/players/markoPjaca.png'
 
+import englandFlag from './../../../assets/images/uploads/countries/angleterre_flag.svg'
+import danemakFlag from './../../../assets/images/uploads/countries/danemak_flag.svg'
+import finlandFlag from './../../../assets/images/uploads/countries/finland_flag.svg'
+import iranFlag from './../../../assets/images/uploads/countries/iran_flag.svg'
+import italieFlag from './../../../assets/images/uploads/countries/italie_flag.svg'
+import russieFlag from './../../../assets/images/uploads/countries/russie_flag.svg'
+
+
+function MessageAlert() {
+  return(
+    <div className='message-alert'>
+      <p>
+        Aucun match disponible!
+      </p>
+    </div>
+  )
+}
 
 
 const Home = () => {
@@ -36,12 +69,15 @@ const Home = () => {
   }
   const classes = userStyles()
 
+  const dateTime = moment().format('yy-MM-DD, HH:mm').replace(',','')
+  
+  //data
   const data = [
     {
       championship: {
         name: 'Ligue 1',
         logo: leagueUnLogo,
-        datetime: '17.03 23:00',
+        datetime: [2023, 2, 17, 23, 0, 0], //[year, month, day, hours, minutes, seconde]
         cote: '4.24',
         endState: 'X'
       },
@@ -66,14 +102,12 @@ const Home = () => {
         },
 
       ]
-
     },
-
     {
       championship: {
         name: 'Serie A',
         logo: serieALogo,
-        datetime: '17.03 - 22:45',
+        datetime: [2023, 2 , 17, 22, 45, 0],//[year, month, day, hours, minutes, seconde]
         cote: '4.78',
         endState: 'X'
       },
@@ -99,10 +133,297 @@ const Home = () => {
 
       ]
 
-    }
+    },
+    {
+      championship: {
+        name: 'Mathes amicaux',
+        logo: '',
+        datetime: [2023, 2, 23, 17, 0, 0],//[year, month, day, hours, minutes, seconde]
+        cote: '3.28',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Iran',
+          logo: iranFlag,
+          cote: '2.25',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Russie',
+          logo: russieFlag,
+          cote: '3.28',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Championnat d\'Europe 2024',
+        logo: '',
+        datetime: [2023, 2 , 23 , 19, 45],//[year, month, day, hours, minutes, seconde]
+        cote: '3.09',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Italie',
+          logo: italieFlag,
+          cote: '2.936',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Angleterre',
+          logo: englandFlag,
+          cote: '2.57',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Championnat d\'Europe 2024',
+        logo: '',
+        datetime: [2023, 2 ,23 , 19, 45, 0],//[year, month, day, hours, minutes, seconde]
+        cote: '4.86',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Danemark',
+          logo: danemakFlag,
+          cote: '1.32',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Finlande',
+          logo: finlandFlag,
+          cote: '10.5',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Premier League',
+        logo: premierLeague,
+        datetime: [2023, 3, 5 , 22, 0, 0],//[year, month, day, hours, minutes, seconde]
+        cote: '4.18',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Manchester United',
+          logo: mantchester,
+          cote: '1.616',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Brentford',
+          logo: brentford,
+          cote: '5.1',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Premier League',
+        logo: premierLeague,
+        datetime: [2023, 3, 5 , 22, 15, 0],//[year, month, day, hours, minutes, seconde]
+        cote: '4.92',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Gil Vicente',
+          logo: gilVicente,
+          cote: '7.4',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Sporting Clube de Portugal',
+          logo: sportingClub,
+          cote: '1.395',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Coupe du Roi',
+        logo: '',
+        datetime: [2023, 3, 5 , 22, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.46',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Barcelone',
+          logo: barcelone,
+          cote: '2.33',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Real Madrid',
+          logo: realMardrid,
+          cote: '2.975',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Coupe de Turquie',
+        logo: '',
+        datetime: [2023, 3, 6 , 17, 30, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '5.65',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Fenerbahçe SK',
+          logo: fenerbahçe,
+          cote: '1.33',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Kayserispor',
+          logo: kayserispor,
+          cote: '7.9',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Coupe de France',
+        logo: '',
+        datetime: [2023, 3, 6 , 18, 45, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '4.06',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Annecy',
+          logo: annecy,
+          cote: '5.15',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Toulouse',
+          logo: toulouse,
+          cote: '1.63',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Coupe de Russie',
+        logo: '',
+        datetime: [2023, 3, 6 , 10, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.64',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Krasnodar',
+          logo: krasnodor,
+          cote: '1.86',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Rostov',
+          logo: rostov,
+          cote: '4.15',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
   ]
 
-  const SliderList = data.map((item, index) => {
+  
+
+  const filteredData = data.filter(item => moment(item.championship.datetime).add(1, 'hours').format('yy-MM-DD, HH:mm').replace(",", "")>dateTime)
+  
+  const SliderList = filteredData.map((item, index) => {
+    const datetimeItem = moment(item.championship.datetime).format('yy-MM-DD, HH:mm').replace(",", "").split(" ")
+    const itemDate = datetimeItem[0].split('-')
+    const itemTime = datetimeItem[1]
+    
     return (
       <div className={classes.sliderItem} key={index}>
         <div className={classes.sliderItemInner}>
@@ -124,22 +445,28 @@ const Home = () => {
             <div className={classes.championshipLogo}><img src={item.championship.logo}/></div>
             <h3 className={classes.championshipName}>{item.championship.name}</h3>
             <div className={classes.championshipMatch}>
-              <div className={classes.championshipMatchDateTime}>{item.championship.datetime}</div>
+              <div className={classes.championshipMatchDateTime}>{itemDate[2]+"."+itemDate[1]+" "+itemTime}</div>
               <div className={classes.championshipMatchOdds}>{`${item.championship.endState} ${item.championship.cote}`}</div>
             </div>
           </div>
         </div>
       </div>
     )
-  })
+  }) 
 
   return (
     <div className={classes.home}>
       <Container>
         <div className={classes.homeInner}>
-          <Slider className={classes.slider} {...settings}>
-            {SliderList}
-          </Slider>
+          {
+            filteredData.length> 0 ?
+            (
+              <Slider className={classes.slider} {...settings}>
+               {SliderList} 
+              </Slider>
+            ): <MessageAlert/>
+          }
+          
         </div>
       </Container>
       
