@@ -12,6 +12,7 @@ import premierLeague from './../../../assets/images/uploads/championships/premie
 import leagueUnLogo from './../../../assets/images/uploads/championships/league1.svg'
 import serieALogo from './../../../assets/images/uploads/championships/serieA.svg'
 
+//team
 import evertonImg from './../../../assets/images/uploads/teams/everton.svg'
 import liverpoolImg from './../../../assets/images/uploads/teams/liverpool.svg'
 import lyonImg from './../../../assets/images/uploads/teams/lyon.svg'
@@ -32,6 +33,25 @@ import kayserispor from './../../../assets/images/uploads/teams/Kayserispor.svg'
 import krasnodor from './../../../assets/images/uploads/teams/Krasnodar.svg'
 import rostov from './../../../assets/images/uploads/teams/Rostov.svg'
 import toulouse from './../../../assets/images/uploads/teams/Toulouse.svg'
+
+import astonVilla from './../../../assets/images/uploads/teams/AstonVilla.svg'
+import celtadeVigo from './../../../assets/images/uploads/teams/CeltadeVigo.svg'
+import chelsea from './../../../assets/images/uploads/teams/Chelsea.svg'
+import elche from './../../../assets/images/uploads/teams/Elche.svg'
+import fiorentina from './../../../assets/images/uploads/teams/Fiorentina.svg'
+import interMilan from './../../../assets/images/uploads/teams/InterMilan.svg'
+import lecce from './../../../assets/images/uploads/teams/Lecce.svg'
+import milan from './../../../assets/images/uploads/teams/Milan.svg'
+import monza1912 from './../../../assets/images/uploads/teams/Monza1912.svg'
+import nottinghamForest from './../../../assets/images/uploads/teams/NottinghamForest.svg'
+import osasuna from './../../../assets/images/uploads/teams/Osasuna.svg'
+import salernitana from './../../../assets/images/uploads/teams/Salernitana.svg'
+import seville from './../../../assets/images/uploads/teams/Seville.svg'
+import spezia from './../../../assets/images/uploads/teams/Spezia.svg'
+import sscNeapel from './../../../assets/images/uploads/teams/SSC_Neapel.svg'
+import udineseCalcio from './../../../assets/images/uploads/teams/UdineseCalcio.svg'
+import wolverhamptonWanderers from './../../../assets/images/uploads/teams/WolverhamptonWanderers.svg'
+//end team
 
 import messiImg from './../../../assets/images/uploads/players/messi.png'
 import neymaImg from './../../../assets/images/uploads/players/neyma.png'
@@ -404,6 +424,316 @@ const Home = () => {
           name: 'Rostov',
           logo: rostov,
           cote: '4.15',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Serie A',
+        logo: serieALogo,
+        datetime: [2023, 3, 7 , 15, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '4.64',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Salernitana 1919',
+          logo: salernitana,
+          cote: '4.85',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Inter Milan',
+          logo: interMilan,
+          cote: '1.445',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Serie A',
+        logo: serieALogo,
+        datetime: [2023, 3, 7 , 17, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.88',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Lecce',
+          logo: lecce,
+          cote: '5.85',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'SSC Naples',
+          logo: sscNeapel,
+          cote: '1.6',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Serie A',
+        logo: serieALogo,
+        datetime: [2023, 3, 7 , 19, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '4.82',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Milan',
+          logo: milan,
+          cote: '1.4',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Empoli',
+          logo: empoliLogo,
+          cote: '7.6',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'LA LIGA',
+        logo: '',
+        datetime: [2023, 3, 7 , 19, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.38',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Séville',
+          logo: seville,
+          cote: '2.1',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Celta de Vigo',
+          logo: celtadeVigo,
+          cote: '3.54',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Serie A',
+        logo: serieALogo,
+        datetime: [2023, 3, 8 , 10, 30, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.5',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Udinese Calcio',
+          logo: udineseCalcio,
+          cote: '2.035',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Monza 1912',
+          logo: monza1912,
+          cote: '3.6',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Serie A',
+        logo: serieALogo,
+        datetime: [2023, 3, 8 , 12, 30, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '4.68',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Fiorentina',
+          logo: fiorentina,
+          cote: '1.42',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Spezia',
+          logo: spezia,
+          cote: '7.4',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Première League',
+        logo: '',
+        datetime: [2023, 3, 8 , 11, 30, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '4.38',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Manchester United',
+          logo: mantchester,
+          cote: '1.5',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Everton',
+          logo: evertonImg,
+          cote: '6.3',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Première League',
+        logo: '',
+        datetime: [2023, 3, 8 , 14, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.94',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Aston Villa',
+          logo: astonVilla,
+          cote: '1.63',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Nottingham Forest',
+          logo: nottinghamForest,
+          cote: '5.35',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Première League',
+        logo: '',
+        datetime: [2023, 3, 8 , 14, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.44',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Wolverhampton Wanderers',
+          logo: wolverhamptonWanderers,
+          cote: '3.94',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Chelsea',
+          logo: chelsea,
+          cote: '1.955',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'LA LIGA',
+        logo: '',
+        datetime: [2023, 3, 8 , 12, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.54',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Osasuna',
+          logo: osasuna,
+          cote: '1.75',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Elche',
+          logo: elche,
+          cote: '5',
           player: {
             name: '',
             img: ''
