@@ -26,7 +26,7 @@ const userStyles = createUseStyles({
     marginBottom:'20px',  
   },
   championshipName: {
-    fontSize: '2.9rem',
+    fontSize: '2.1rem',
     lineHeight: '2.9rem',
     textAlign: 'center',
     color: colorWhite,

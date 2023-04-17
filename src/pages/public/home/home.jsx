@@ -54,6 +54,7 @@ import wolverhamptonWanderers from './../../../assets/images/uploads/teams/Wolve
 import hertha from './../../../assets/images/uploads/teams/Hertha.svg'
 import rayoVallecano from './../../../assets/images/uploads/teams/Rayo_Vallecano.svg'
 import schalke from './../../../assets/images/uploads/teams/Schalke.svg'
+import benfica from './../../../assets/images/uploads/teams/Benfica.svg'
 
 //end team
 
@@ -800,6 +801,99 @@ const Home = () => {
           name: 'Osasuna',
           logo: osasuna,
           cote: '3.68',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Ligue des champions de l\'UEFA',
+        logo: '',
+        datetime: [2023, 3, 18 , 22, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.52',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'SSC Naples',
+          logo: sscNeapel,
+          cote: '1.835',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Milan',
+          logo: milan,
+          cote: '4.42',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Ligue des champions de l\'UEFA',
+        logo: '',
+        datetime: [2023, 3, 18 , 22, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.48',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Chelsea',
+          logo: chelsea,
+          cote: '2.664',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Real Madrid',
+          logo: realMardrid,
+          cote: '2.555',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Ligue des champions de l\'UEFA',
+        logo: '',
+        datetime: [2023, 3, 19 , 22, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.38',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Inter Milan',
+          logo: interMilan,
+          cote: '2.14',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Benfica',
+          logo: benfica,
+          cote: '3.42',
           player: {
             name: '',
             img: ''
