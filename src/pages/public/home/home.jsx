@@ -51,6 +51,10 @@ import spezia from './../../../assets/images/uploads/teams/Spezia.svg'
 import sscNeapel from './../../../assets/images/uploads/teams/SSC_Neapel.svg'
 import udineseCalcio from './../../../assets/images/uploads/teams/UdineseCalcio.svg'
 import wolverhamptonWanderers from './../../../assets/images/uploads/teams/WolverhamptonWanderers.svg'
+import hertha from './../../../assets/images/uploads/teams/Hertha.svg'
+import rayoVallecano from './../../../assets/images/uploads/teams/Rayo_Vallecano.svg'
+import schalke from './../../../assets/images/uploads/teams/Schalke.svg'
+
 //end team
 
 import messiImg from './../../../assets/images/uploads/players/messi.png'
@@ -734,6 +738,68 @@ const Home = () => {
           name: 'Elche',
           logo: elche,
           cote: '5',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'Bundesliga',
+        logo: '',
+        datetime: [2023, 3, 14 , 21, 30, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.32',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Schalke 04',
+          logo: schalke,
+          cote: '2.31',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Hertha BSC',
+          logo: elche,
+          cote: '3.13',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+
+      ]
+
+    },
+    {
+      championship: {
+        name: 'LA LIGA',
+        logo: '',
+        datetime: [2023, 3, 14 , 22, 0, 0], //[year, month, day, hours, minutes, seconde]
+        cote: '3.32',
+        endState: 'X'
+      },
+      teams: [
+        {
+          name: 'Rayo Vallecano',
+          logo: rayoVallecano,
+          cote: '2.17',
+          player: {
+            name: '',
+            img: ''
+          }
+        },
+        {
+          name: 'Osasuna',
+          logo: osasuna,
+          cote: '3.68',
           player: {
             name: '',
             img: ''
